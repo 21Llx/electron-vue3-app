@@ -10,10 +10,13 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
+    "baseUrl": ".",
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-
+    "paths": {
+      "@/*": ["src/*"],
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

@@ -6,11 +6,14 @@
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build && electron-builder",
+    "dev:e": "vite --config electron.config.ts",
+    "build": "vue-tsc && vite build",
+    "build:e": "vue-tsc && vite build --config electron.config.ts && electron-builder",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

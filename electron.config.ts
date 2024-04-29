@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import path from 'node:path'
-import vue from '@vitejs/plugin-vue'
 import electron from 'vite-plugin-electron/simple'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   resolve: {
